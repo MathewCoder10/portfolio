@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  <!-- Link to your stylesheet -->
+</head>
+<body class="bg-dark text-light">
+    <div class="container text-center my-5">
+        <div class="success-message bg-success p-4 rounded">
+            <h1 class="display-4" style="color: white;">Success!</h1>
+            <p class="lead" style="color: white;">Your message has been sent successfully.</p>
+            <a href="{% url 'home' %}" class="btn btn-light" style="color: white;">Go to Home</a>
+        </div>
+    </div>
+</body>
+</html>
